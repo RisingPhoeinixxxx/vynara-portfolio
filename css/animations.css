@@ -1,0 +1,149 @@
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+.robot{
+
+    animation:
+        float 4s ease-in-out infinite;
+
+    filter:
+        drop-shadow(
+            0 0 20px rgba(96,165,250,0.3)
+        )
+        drop-shadow(
+            0 0 40px rgba(96,165,250,0.2)
+        );
+}
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:
+            0 0 10px rgba(96,165,250,0.2);
+    }
+
+    50%{
+
+        box-shadow:
+            0 0 30px rgba(96,165,250,0.4);
+    }
+
+    100%{
+
+        box-shadow:
+            0 0 10px rgba(96,165,250,0.2);
+    }
+}
+
+.chat-container{
+
+    animation:
+        glow 5s infinite ease-in-out;
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(15px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0px);
+    }
+}
+
+.message{
+
+    animation:
+        fadeIn 0.4s ease;
+}
+
+@keyframes pulse{
+
+    0%{
+
+        opacity:0.6;
+    }
+
+    50%{
+
+        opacity:1;
+    }
+
+    100%{
+
+        opacity:0.6;
+    }
+}
+
+.status{
+
+    animation:
+        pulse 2s infinite;
+}
+
+.typing{
+
+    display:flex;
+
+    gap:6px;
+
+    padding:15px;
+}
+
+.typing span{
+
+    width:8px;
+    height:8px;
+
+    border-radius:50%;
+
+    background:#60A5FA;
+
+    animation:
+        typingBounce 1.2s infinite;
+}
+
+.typing span:nth-child(2){
+
+    animation-delay:0.2s;
+}
+
+.typing span:nth-child(3){
+
+    animation-delay:0.4s;
+}
+
+@keyframes typingBounce{
+
+    0%,80%,100%{
+
+        transform:scale(0.8);
+    }
+
+    40%{
+
+        transform:scale(1.3);
+    }
+}

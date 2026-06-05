@@ -1,0 +1,211 @@
+.chat-container{
+
+    margin-top:40px;
+
+    width:100%;
+
+    max-width:750px;
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    backdrop-filter:blur(15px);
+
+    box-shadow:
+        0 0 20px rgba(96,165,250,0.20),
+        0 0 40px rgba(96,165,250,0.10);
+
+    overflow:hidden;
+}
+
+.chat-header{
+
+    padding:20px;
+
+    border-bottom:
+        1px solid rgba(255,255,255,0.1);
+
+    color:#60A5FA;
+
+    font-weight:bold;
+
+    font-size:1.1rem;
+}
+
+.chat-body{
+
+    min-height:200px;
+
+    max-height:400px;
+
+    overflow-y:auto;
+
+    padding:20px;
+
+    scroll-behavior:smooth;
+}
+
+.chat-body::-webkit-scrollbar{
+
+    width:8px;
+}
+
+.chat-body::-webkit-scrollbar-thumb{
+
+    background:#38BDF8;
+
+    border-radius:20px;
+}
+
+.message{
+
+    max-width:80%;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    line-height:1.6;
+}
+
+.message.ai{
+
+    background:#0F172A;
+
+    border:
+        1px solid rgba(96,165,250,0.15);
+
+    max-width:500px;
+}
+
+.message.user{
+
+    background:#38BDF8;
+
+    color:white;
+
+    margin-left:auto;
+
+    max-width:500px;
+}
+
+.chat-input{
+
+    display:flex;
+
+    gap:10px;
+
+    padding:20px;
+
+    border-top:
+        1px solid rgba(255,255,255,0.1);
+}
+
+.chat-input input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+        rgba(255,255,255,0.08);
+
+    color:white;
+
+    outline:none;
+}
+
+.chat-input input::placeholder{
+
+    color:#94A3B8;
+}
+
+.chat-input button{
+
+    padding:15px 30px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:#38BDF8;
+
+    color:white;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.chat-input button:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 0 20px rgba(56,189,248,0.6);
+}
+
+.suggestions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:15px;
+}
+
+.suggestion-btn{
+
+    background:
+        rgba(96,165,250,0.15);
+
+    border:
+        1px solid rgba(96,165,250,0.3);
+
+    color:white;
+
+    padding:10px 15px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.suggestion-btn:hover{
+
+    background:#38BDF8;
+}
+
+#voiceToggle,
+#pauseVoice,
+#stopVoice{
+
+background:none;
+border:none;
+
+font-size:20px;
+
+cursor:pointer;
+
+color:#00ff88;
+
+margin-left:8px;
+
+}
